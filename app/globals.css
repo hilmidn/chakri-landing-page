@@ -4,10 +4,14 @@
     --primary: #FF8345;
     --dark: #183B56;
     --light: #FFFFFF;
+    --muted: #5A7184;
+    --subtle: #3F475C;
 }
 
 @theme {
     --color-primary: var(--primary);
     --color-dark: var(--dark);
     --color-light: var(--light);
+    --color-muted: var(--muted);
+    --color-subtle: var(--subtle);
 }
