@@ -15,3 +15,15 @@
     --color-muted: var(--muted);
     --color-subtle: var(--subtle);
 }
+
+.button {
+    @apply rounded-[10px] px-10 py-[22px] text-[16px] font-bold;
+}
+
+.button-primary {
+    @apply bg-primary text-light
+}
+
+.button-secondary {
+    @apply bg-light text-dark
+}
