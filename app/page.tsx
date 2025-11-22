@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import Button from "./components/atoms/Button/Button";
 import Header from "./components/organisms/Header/Header";
+import ImageWithVector from "./components/molecules/ImageWithVector";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -30,7 +31,7 @@ export default function Home() {
                 className="placeholder-muted/50 text-muted text-[16px] font-bold outline-0"
                 placeholder="Location"
               />
-              <Button className="button button-primary">Search</Button>
+              <Button className="button button-secondary">Search</Button>
             </div>
             <div className="flex items-center gap-5">
               <h2 className="text-primary text-[16px] font-medium">
@@ -52,7 +53,9 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div>Foto</div>
+          <div>
+            <ImageWithVector />
+          </div>
         </section>
       </main>
     </>
