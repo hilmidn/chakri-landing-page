@@ -19,17 +19,29 @@
 }
 
 .button {
-    @apply rounded-[10px] px-10 py-[22px] text-[16px] font-bold;
+    @apply rounded-[10px] px-10 py-[22px] text-[16px] font-bold cursor-pointer;
 }
 
 .button-primary {
     @apply bg-primary text-light
 }
 
+.button-primary:hover {
+    @apply bg-primary/80
+}
+
 .button-secondary {
     @apply bg-secondary text-light
 }
 
+.button-secondary:hover {
+    @apply bg-secondary/80
+}
+
 .button-light {
     @apply bg-light text-dark
+}
+
+.button-light:hover {
+    @apply bg-dark/80 text-light
 }
