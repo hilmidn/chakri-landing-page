@@ -13,6 +13,7 @@ import {
 import { AiFillSound } from "react-icons/ai";
 import { BsCameraFill } from "react-icons/bs";
 import { IoMdPeople } from "react-icons/io";
+import HeaderScrollEvents from "./components/organisms/Header/HeaderScrollEvents";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,53 +24,56 @@ export default function Home() {
   return (
     <>
       <Header />
+      <HeaderScrollEvents />
       <main>
         {/* SECTION 1 HERO SECTION */}
         {/* FIND YOUR JOB */}
-        <section className="bg-light container mx-auto flex flex-col items-start justify-between gap-[30px] px-6">
-          <div className="flex flex-col gap-6">
-            {/* TITLE */}
-            <div className="max-w-[241px]">
-              <h1
-                className={`${poppins.className} text-dark text-[30px] leading-10 font-extrabold`}
-              >
-                Find Every Job in One Platform
-              </h1>
-            </div>
-            {/* FORM SEARCHING */}
-            <div className="flex flex-row items-center gap-1 rounded-[10px] bg-white px-3.5 py-3 shadow">
-              <input
-                className="placeholder-muted/50 text-muted w-full text-[14px] font-bold outline-0"
-                placeholder="Job / Position"
-              />
-              <input
-                className="placeholder-muted/50 text-muted w-full text-[14px] font-bold outline-0"
-                placeholder="Location"
-              />
-              <Button className="button button-secondary">Search</Button>
-            </div>
+        <section className="bg-light w-full">
+          <div className="container mx-auto flex flex-col items-start justify-between gap-[30px] px-6 md:px-[62px] lg:flex-row lg:items-center">
+            <div className="flex w-auto flex-col gap-6 md:w-full lg:w-auto">
+              {/* TITLE */}
+              <div className="max-w-[241px] md:max-w-max lg:max-w-[644px]">
+                <h1
+                  className={`${poppins.className} text-dark text-[30px] leading-10 font-extrabold lg:text-[80px] lg:leading-[100px]`}
+                >
+                  Find Every Job in One Platform
+                </h1>
+              </div>
+              {/* FORM SEARCHING */}
+              <div className="flex flex-row items-center gap-1 rounded-[10px] bg-white px-3.5 py-3 shadow">
+                <input
+                  className="placeholder-muted/50 text-muted w-full grid-rows-1 text-[14px] font-bold outline-0"
+                  placeholder="Job / Position"
+                />
+                <input
+                  className="placeholder-muted/50 text-muted w-full text-[14px] font-bold outline-0"
+                  placeholder="Location"
+                />
+                <Button className="button button-secondary">Search</Button>
+              </div>
 
-            <div className="flex items-center gap-5">
-              <h2 className="text-primary text-[16px] font-medium">
-                Recent Search :
-              </h2>
-              <ul className="flex items-center gap-2 text-[14px] font-medium">
-                <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
-                  Design
-                </li>
-                <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
-                  UI/UX
-                </li>
-                <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
-                  Product
-                </li>
-                <li className="text-muted hidden rounded-xs bg-black/5 px-[5px] py-1 md:list-item">
-                  Graphic
-                </li>
-              </ul>
+              <div className="flex items-center gap-5">
+                <h2 className="text-primary text-[16px] font-medium">
+                  Recent Search :
+                </h2>
+                <ul className="flex items-center gap-2 text-[14px] font-medium">
+                  <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
+                    Design
+                  </li>
+                  <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
+                    UI/UX
+                  </li>
+                  <li className="text-muted rounded-xs bg-black/5 px-[5px] py-1">
+                    Product
+                  </li>
+                  <li className="text-muted hidden rounded-xs bg-black/5 px-[5px] py-1 md:list-item">
+                    Graphic
+                  </li>
+                </ul>
+              </div>
             </div>
+            <ImageWithVector />
           </div>
-          <ImageWithVector />
         </section>
 
         {/* SECTION 2 SUPPORT */}
