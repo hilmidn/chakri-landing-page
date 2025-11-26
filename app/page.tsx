@@ -30,7 +30,7 @@ export default function Home() {
         {/* FIND YOUR JOB */}
         <section className="bg-light w-full">
           <div className="container mx-auto flex flex-col items-start justify-between gap-[30px] px-6 md:px-[62px] lg:flex-row lg:items-center">
-            <div className="flex w-auto flex-col gap-6 md:w-full lg:w-auto">
+            <div className="flex w-full flex-col gap-6 lg:w-auto">
               {/* TITLE */}
               <div className="max-w-[241px] md:max-w-max lg:max-w-[644px]">
                 <h1
@@ -106,7 +106,7 @@ export default function Home() {
             Browse by
             <br /> Job Categories
           </h2>
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 py-10 md:grid-cols-2 lg:grid-cols-4">
             {/* CARD */}
             {/* 1 */}
             <div className="group rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:bg-gray-100">
@@ -214,7 +214,7 @@ export default function Home() {
               </div>
             </div>
             {/* 8 */}
-            <div className="border-primary bg-primary rounded-lg border p-10 shadow-md">
+            <div className="group border-primary bg-primary hover:bg-primary/80 rounded-lg border p-10 shadow-md">
               <div className="flex items-center justify-between py-3">
                 <span className="text-light text-[25px]">
                   Explore <br />
