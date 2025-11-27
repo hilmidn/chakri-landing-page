@@ -13,6 +13,7 @@ import {
 import { AiFillSound } from "react-icons/ai";
 import { BsCameraFill } from "react-icons/bs";
 import { IoMdPeople } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
 import HeaderScrollEvents from "./components/organisms/Header/HeaderScrollEvents";
 
 const poppins = Poppins({
@@ -224,6 +225,71 @@ export default function Home() {
                 <button className="text-light text-20px]">
                   <FaArrowRight />
                 </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* SECTION 4 JOB */}
+        <section className="bg-light w-full">
+          <div className="container mx-auto flex flex-col items-start justify-between gap-[30px] px-6 md:px-[62px] lg:flex-row lg:items-center">
+            <ImageWithVector />
+            <div>
+              <h2
+                className={`${poppins.className} text-dark text-center text-[30px] leading-9 font-extrabold`}
+              >
+                Watch How Our
+                <br /> Platform Work!
+              </h2>
+              <div className="flex w-full flex-col gap-6 pt-2 lg:w-auto">
+                <div className="group flex rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:bg-gray-100">
+                  <div className="group-hover:bg-primary group-hover:text-light text-primary h-fit rounded-full bg-white p-4 shadow-xl">
+                    <FaUser />
+                  </div>
+                  <div>
+                    <h3>Create Account</h3>
+                    <p>
+                      Completly foster backward-compatible alignments and
+                      multimedia based resources.
+                    </p>
+                  </div>
+                </div>
+                <div className="group flex rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:bg-gray-100">
+                  <div className="group-hover:bg-primary group-hover:text-light text-primary h-fit rounded-full bg-white p-4 shadow-xl">
+                    <FaUser />
+                  </div>
+                  <div>
+                    <h3>Upload CV/Resume</h3>
+                    <p>
+                      Completly foster backward-compatible alignments and
+                      multimedia based resources.
+                    </p>
+                  </div>
+                </div>
+                <div className="group flex rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:bg-gray-100">
+                  <div className="group-hover:bg-primary group-hover:text-light text-primary h-fit rounded-full bg-white p-4 shadow-xl">
+                    <FaUser />
+                  </div>
+                  <div>
+                    <h3>Choose Job</h3>
+                    <p>
+                      Completly foster backward-compatible alignments and
+                      multimedia based resources.
+                    </p>
+                  </div>
+                </div>
+                <div className="group flex rounded-lg border border-gray-100 bg-white p-5 shadow-md hover:bg-gray-100">
+                  <div className="group-hover:bg-primary group-hover:text-light text-primary h-fit rounded-full bg-white p-4 shadow-xl">
+                    <FaUser />
+                  </div>
+                  <div>
+                    <h3>Complete Apply</h3>
+                    <p>
+                      Completly foster backward-compatible alignments and
+                      multimedia based resources.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
